@@ -1,0 +1,2 @@
+vectoriser: word_tfidf
+stopwords: twitter_custom

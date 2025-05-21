@@ -1,0 +1,7 @@
+lower: True
+regex_clean: basic
+tokeniser: spacy
+stopwords: twitter_custom
+stem_or_lemma: lemma
+emoji_mode: remove
+vectoriser: word_tfidf

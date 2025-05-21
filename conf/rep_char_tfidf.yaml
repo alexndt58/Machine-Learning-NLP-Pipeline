@@ -1,0 +1,4 @@
+vectoriser: char_tfidf
+ngrams: 5-8
+stopwords: none
+tokeniser: regex
