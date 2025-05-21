@@ -55,7 +55,5 @@ Three distinct text representation strategies are implemented, each paired with 
 - Pennington, J. et al. (2014). *GloVe: Global Vectors for Word Representation*. EMNLP.
 - Reimers, N. & Gurevych, I. (2021). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. EMNLP.
 
----
 
-*This modular, config-driven design ensures any team member can reproduce, extend, or audit all experiments, fully satisfying the requirements for 80+% distinction.*
 
