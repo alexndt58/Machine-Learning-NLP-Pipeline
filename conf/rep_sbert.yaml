@@ -1,0 +1,2 @@
+vectoriser: sbert
+stopwords: none

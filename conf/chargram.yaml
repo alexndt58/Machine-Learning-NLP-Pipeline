@@ -1,0 +1,8 @@
+lower: True
+regex_clean: basic
+tokeniser: regex
+stopwords: none
+stem_or_lemma: none
+emoji_mode: remove
+vectoriser: char_tfidf
+ngrams: 5-8
