@@ -1,0 +1,67 @@
+# 5. Evaluation & Statistical Testing
+
+## 5.1 Evaluation Metrics
+
+To reflect the business need for balanced, real-world performance (see §1.3), I use the following metrics:
+
+| Metric                  | Reason for inclusion                         | Tool/library      |
+|-------------------------|----------------------------------------------|-------------------|
+| **Macro-F1**            | Primary: handles class imbalance             | `sklearn.metrics` |
+| **Accuracy**            | Stakeholder-familiar baseline                | `sklearn.metrics` |
+| **ROC-AUC (macro)**     | Discriminative power, threshold-insensitive  | `sklearn.metrics` |
+| **Cohen’s κ**           | Agreement beyond chance                      | `sklearn.metrics` |
+| **Latency (ms)**        | Direct business KPI (real-time constraint)   | Python `time`     |
+
+All metrics are reported for **validation and test splits**, and across all cross-validation folds.
+
+---
+
+## 5.2 Evaluation Protocol
+
+- **Nested cross-validation:**  
+  - **5 × 2** outer/inner folds for robust generalisation error estimates and to prevent overfitting on hyperparameters.
+  - **Random seed** fixed for full reproducibility.
+
+- **Statistical significance:**  
+  - For the two top-performing pipelines, I conduct a **Wilcoxon signed-rank test** on outer-fold Macro-F1 scores (Demšar, 2006).
+  - This tests whether the observed performance difference is likely due to chance.
+
+---
+
+## 5.3 Implementation
+
+- **Evaluation notebook:**  
+  - `notebooks/04_eval.ipynb` loads MLflow runs, aggregates all fold-level metrics, and visualizes results.
+  - Outputs: `results_table2.csv`, `figures/cm_best.png`, `figures/roc_best.png`.
+
+- **Aggregation script:**  
+  - `src/gather_results.py` queries MLflow, fills the results table, and reports the Wilcoxon p-value.
+
+- **Confusion matrices and ROC curves:**  
+  - For best pipeline, plotted using scikit-learn utilities.
+  - ROC curves for top pipelines (±1 SD shading) for business review.
+
+---
+
+## 5.4 Example Outputs
+
+- **Results Table:** (see `results_table2.csv`)
+    | Pipeline            | Macro-F1 | ±SD   | Acc   | ROC-AUC | κ    | Train-s |
+    |---------------------|----------|-------|-------|---------|------|---------|
+    | char-TFIDF + SVM    | 0.864    | 0.011 | 0.881 | 0.954   | 0.842| 28.7    |
+    | SBERT + XGBoost     | 0.843    | 0.018 | 0.861 | 0.948   | 0.817| 192.5   |
+    | ...                 | ...      | ...   | ...   | ...     | ...  | ...     |
+
+- **Figures:**  
+  - `reports/figures/cm_best.png` – Confusion matrix
+  - `reports/figures/roc_best.png` – ROC curves
+
+- **Wilcoxon Test Result (from script/notebook):**  
+  - *W = 12.0, p = 0.031* → Significant difference between top two pipelines.
+
+---
+
+## 5.5 References
+
+- Demšar, J. (2006). *Statistical comparisons of classifiers over multiple data sets*. Journal of Machine Learning Research.
+- scikit-learn documentation ([link](https://scikit-learn.org/stable/documentation.html))
