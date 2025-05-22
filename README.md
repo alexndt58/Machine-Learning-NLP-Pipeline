@@ -48,7 +48,7 @@ cd Machine-Learning-NLP-Pipeline
 or unpack the ZIP and open in VS Code.
 
 
-2. Set up your Python environment
+### 2. Set up your Python environment
 
 python -m venv .venv
 # Activate (Windows):
@@ -60,7 +60,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 
-3. Run EDA and Data Preparation
+### 3. Run EDA and Data Preparation
 
 jupyter notebook notebooks/01_eda.ipynb
 
@@ -69,23 +69,23 @@ Generates EDA plots in reports/figures/
 Saves cleaned data to data/tweets.feather
 
 
-4. Run Experiments
+### 4. Run Experiments
 
 python flows/experiment_grid.py
 
 Performs model grid search using configs in conf/
 Logs results to MLflow (optional: run mlflow ui to inspect)
 
-5. Aggregate Results & Visualize
+### 5. Aggregate Results & Visualize
 
 python src/gather_results.py
 jupyter notebook notebooks/04_eval.ipynb
 
-6. Run Tests
+### 6. Run Tests
 
 pytest -q
 
-Results Snapshot
+## Results Snapshot
 
 Best Model: Char-TFIDF + Linear SVM
 
@@ -95,14 +95,15 @@ Key Figures: See reports/figures/ for class distribution, confusion matrix, and 
 
 Business Impact: Estimated >6 analyst-hours/day saved; robust to concept drift (PSI monitored)
 
-Reproducibility & Notes
+## Reproducibility & Notes
+
 All splits, configs, and random seeds are pre-versioned.
 
 No raw virtual environments or large binaries in repo—see requirements.txt for dependencies.
 
 All code and results are organized per CRISP-DM and KDD best practice.
 
-References
+## References
 
 Chapman, P. et al. (2000). CRISP-DM 1.0: Step-by-Step Data Mining Guide
 
