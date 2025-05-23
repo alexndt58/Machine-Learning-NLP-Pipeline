@@ -23,16 +23,28 @@ The solution is tailored for NewsPulse Analytics—a scenario where editors must
 ## 📁 Project Structure
 
 Machine-Learning-NLP-Pipeline/
+
 ├── src/ # Core pipeline code and models
+
 ├── flows/ # Experiment orchestration scripts
+
 ├── conf/ # YAML configs for pipeline/experiments
+
 ├── notebooks/ # EDA and evaluation notebooks
+
 ├── reports/figures/ # All output plots and figures
+
 ├── data/raw/ # Raw JSON data (do not share publicly)
+
 ├── data/splits/ # Pre-defined train/val/test splits
+
+
 ├── tests/ # Unit tests
+
 ├── docs/ # Report markdown sections
+
 ├── requirements.txt # Python dependencies
+
 └── README.md
 
 
