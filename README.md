@@ -15,6 +15,7 @@ The solution is tailored for NewsPulse Analytics—a scenario where editors must
 ## 📁 Project Structure
 
 Machine-Learning-NLP-Pipeline/
+<<<<<<< HEAD
 ├── README.md                # Main project instructions
 ├── requirements.txt         # Python dependencies
 ├── conf/
@@ -44,6 +45,31 @@ Machine-Learning-NLP-Pipeline/
 │   └── CETM47_24_5-AS2-Data.json
 └── tests/
     └── test_clean.py
+=======
+
+├── src/ # Core pipeline code and models
+
+├── flows/ # Experiment orchestration scripts
+
+├── conf/ # YAML configs for pipeline/experiments
+
+├── notebooks/ # EDA and evaluation notebooks
+
+├── reports/figures/ # All output plots and figures
+
+├── data/raw/ # Raw JSON data (do not share publicly)
+
+├── data/splits/ # Pre-defined train/val/test splits
+
+
+├── tests/ # Unit tests
+
+├── docs/ # Report markdown sections
+
+├── requirements.txt # Python dependencies
+
+└── README.md
+>>>>>>> cfc8bf1b3babee8a33a8b063f520116c6de9bcdb
 
 
 ```YAML
@@ -117,7 +143,3 @@ $env:PYTHONPATH = "."
 pytest -q
 ```
 - Purpose: To check that core helpers and cleaning functions works
-
-
-
-
