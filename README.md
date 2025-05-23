@@ -17,59 +17,32 @@ The solution is tailored for NewsPulse Analytics—a scenario where editors must
 Machine-Learning-NLP-Pipeline/
 
 ├── README.md            
-
 ├── requirements.txt        
-
 ├── conf/
-
 │   ├── rep_word_tfidf.yaml
-
 │   ├── rep_chargram.yaml
-
 │   └── ... (more configs)
-
 ├── src/
-
 │   ├── run_eda.py
-
 │   ├── run_experiment.py
-
 │   ├── gather_results.py
-
 │   └── ... (other .py scripts)
-
 ├── flows/
-
 │   └── experiment_grid.py
-
 ├── notebooks/
-
 │   ├── 01_eda.ipynb
-
 │   └── 04_eval.ipynb
-
 ├── reports/
-
 │   ├── results_table2.csv
-
 │   ├── best_model_predictions.csv
-
 │   └── figures/
-
 │       ├── cm_best.png
-
 │       └── ... (other images)
-
 ├── data/
-
 │   ├── tweets.feather
-
 │   └── ... (other processed data)
-
 ├── data/raw/
-
 │   └── CETM47_24_5-AS2-Data.json
-
 └── tests/
     └── test_clean.py
 
