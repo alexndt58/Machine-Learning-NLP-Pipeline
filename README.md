@@ -14,6 +14,7 @@ The solution is tailored for NewsPulse Analytics—a scenario where editors must
 
 ## 📁 Project Structure
 
+```bash
 Machine-Learning-NLP-Pipeline/
 
 ├── README.md            
@@ -72,7 +73,7 @@ Machine-Learning-NLP-Pipeline/
 
 └── tests/
     └── test_clean.py
-
+```
 
 ```YAML
 ## Getting Started
