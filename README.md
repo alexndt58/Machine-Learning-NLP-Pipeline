@@ -125,3 +125,46 @@ python src/run_eda.py
 ```powershell
 python flows/experiment_grid.py
 ```
+
+## 4. Aggregate Experiment Results
+```powershell
+python src/gather_results.py
+```
+- Output: Aggregated metrics table as `reports/results_table2.csv`.
+
+## 5. Evaluate and Generate Final Figures in Notebook
+
+```powershell
+jupyter notebook notebooks/04_eval.ipynb
+```
+- Split data or load test set.
+
+- Build or load best pipeline, fit, and predict.
+
+- Save predictions `(reports/best_model_predictions.csv)`.
+
+- Plot confusion matrix `(reports/figures/cm_best.png)` and ROC curve.
+
+- Load and display `reports/results_table2.csv` summary.
+
+
+## 6. Commit All Outputs for Reproducibility
+
+```powershell
+git add reports data notebooks conf src tests requirements.txt README.md
+git commit -m "Full pipeline outputs: EDA, models, results, and eval figures"
+git push origin main
+```
+
+### Troubleshooting
+
+- If you see FileNotFoundError, ensure the previous step created the expected file.
+
+- Always check .venv is activated and you’re running commands from the project root.
+
+- If imports fail, set the Python path:
+
+```powershell
+$env:PYTHONPATH = "."
+
+```
