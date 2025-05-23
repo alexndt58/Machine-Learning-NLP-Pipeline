@@ -15,36 +15,64 @@ The solution is tailored for NewsPulse Analytics—a scenario where editors must
 ## 📁 Project Structure
 
 Machine-Learning-NLP-Pipeline/
-<<<<<<< HEAD
+
 ├── README.md            
+
 ├── requirements.txt        
+
 ├── conf/
+
 │   ├── rep_word_tfidf.yaml
+
 │   ├── rep_chargram.yaml
+
 │   └── ... (more configs)
+
 ├── src/
+
 │   ├── run_eda.py
+
 │   ├── run_experiment.py
+
 │   ├── gather_results.py
+
 │   └── ... (other .py scripts)
+
 ├── flows/
+
 │   └── experiment_grid.py
+
 ├── notebooks/
+
 │   ├── 01_eda.ipynb
+
 │   └── 04_eval.ipynb
+
 ├── reports/
+
 │   ├── results_table2.csv
+
 │   ├── best_model_predictions.csv
+
 │   └── figures/
+
 │       ├── cm_best.png
+
 │       └── ... (other images)
+
 ├── data/
+
 │   ├── tweets.feather
+
 │   └── ... (other processed data)
+
 ├── data/raw/
+
 │   └── CETM47_24_5-AS2-Data.json
+
 └── tests/
     └── test_clean.py
+
 
 ```YAML
 ## Getting Started
@@ -82,10 +110,13 @@ Key evaluation figures: In reports/figures/ (confusion matrix, ROC curve, class 
 Test predictions: In reports/best_model_predictions.csv
 
 
+
+
 🧪 Reproducibility
 All scripts, config files, and data splits are versioned.
 
 Setting PYTHONPATH and following the run sequence below ensures all imports and scripts work on any system.
+
 
 
 
@@ -97,6 +128,7 @@ Pennington et al. (2014). GloVe
 Reimers & Gurevych (2021). SBERT
 
 [See report for full reference list]
+
 
 
 ## CETM47 Project: Sequential Code Run Outline
