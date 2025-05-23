@@ -1,0 +1,13 @@
+Pipeline,Macro-F1,±SD,Report File
+tfidf+svm_rep_word,0.5868,0.0194,cv_svm_rep_word_tfidf.txt
+chargram+svm_rep,0.5868,0.0194,cv_svm_rep_chargram.txt
+glove+svm_rep,0.5868,0.0194,cv_svm_rep_glove.txt
+chargram+lr_rep,0.3978,0.0148,cv_lr_rep_chargram.txt
+glove+lr_rep,0.3978,0.0148,cv_lr_rep_glove.txt
+tfidf+lr_rep_word,0.3978,0.0148,cv_lr_rep_word_tfidf.txt
+tfidf+rf_rep_word,0.3866,0.0185,cv_rf_rep_word_tfidf.txt
+chargram+rf_rep,0.3854,0.0118,cv_rf_rep_chargram.txt
+glove+rf_rep,0.3849,0.0146,cv_rf_rep_glove.txt
+chargram+mnb_rep,0.2813,0.0033,cv_mnb_rep_chargram.txt
+glove+mnb_rep,0.2813,0.0033,cv_mnb_rep_glove.txt
+tfidf+mnb_rep_word,0.2813,0.0033,cv_mnb_rep_word_tfidf.txt

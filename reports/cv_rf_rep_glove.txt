@@ -1,5 +1,5 @@
 Classifier: rf
 Config: conf/rep_glove.yaml
-F1 Macro: 0.3880 ± 0.0139
-Fold scores: [0.3922 0.3707 0.3961 0.4074 0.3737]
-Train time (s): 38.2
+F1 Macro: 0.3849 ± 0.0146
+Fold scores: [0.4    0.3665 0.3923 0.3977 0.3682]
+Train time (s): 71.5

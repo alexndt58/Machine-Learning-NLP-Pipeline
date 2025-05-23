@@ -1,0 +1,12 @@
+Loaded 6442 tweets.
+Nulls per column: {'text': 0, 'date': 0, 'label': 0, 'id': 0, 'label_name': 0, 'token_len': 0, 'char_len': 0, 'has_emoji': 0}
+Duplicate texts: 0
+Short tweets (<3 tokens): 0
+Top hashtags per class:
+sports_&_gaming: [('#NFL', 14), ('#SuperBowl', 14), ('#NASCAR', 11), ('#1', 9), ('#boxing', 8)]
+pop_culture: [('#NowPlaying', 65), ('#BTS', 40), ('#Valimai', 23), ('#MostRequestedLive', 19), ('#PCAs', 16)]
+daily_life: [('#shopmycloset', 8), ('#InternationalWomensDay', 6), ('#COVID19', 4), ('#SB19', 3), ('#IWD2020', 3)]
+business_&_entrepreneurs: [('#shopmycloset', 6), ('#cryptocurrency', 5), ('#Blockchain', 3), ('#Fintech', 3), ('#Crypto', 3)]
+science_&_technology: [('#COVID19', 6), ('#ClimateChange', 5), ('#auspol', 3), ('#MediaBuzz', 3), ('#itstimetochange', 2)]
+arts_&_culture: [('#art', 3), ('#amreading', 3), ('#books', 2), ('#GodMorningSunday', 2), ('#Beauty', 1)]
+Percent of tweets with emoji: 6.47%
