@@ -1,0 +1,5 @@
+Classifier: rf
+Config: conf/rep_word_tfidf.yaml
+F1 Macro: 0.3888 ± 0.0074
+Fold scores: [0.3995 0.3839 0.3818 0.3958 0.383 ]
+Train time (s): 25.7

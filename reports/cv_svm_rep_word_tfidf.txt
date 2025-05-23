@@ -1,0 +1,5 @@
+Classifier: svm
+Config: conf/rep_word_tfidf.yaml
+F1 Macro: 0.5868 ± 0.0194
+Fold scores: [0.5794 0.5665 0.5982 0.619  0.5709]
+Train time (s): 2.3
