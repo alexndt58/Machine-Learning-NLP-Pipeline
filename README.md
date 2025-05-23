@@ -31,7 +31,6 @@ Machine-Learning-NLP-Pipeline/
 ├── flows/
 │   └── experiment_grid.py
 ├── notebooks/
-│   ├── 01_eda.ipynb
 │   └── 04_eval.ipynb
 ├── reports/
 │   ├── results_table2.csv
@@ -113,3 +112,16 @@ $env:PYTHONPATH = "."
 pytest -q
 ```
 - Purpose: To check that core helpers and cleaning functions works
+
+## 2. Run Exploratory Data Analysis (EDA)
+
+```powershell
+python src/run_eda.py
+```
+- Output Cleaned data in `data/tweets.feather`, EDA plots in `reports/figures/`.
+
+## 3. Run the Full Experiment Grid (Model Training)
+
+```powershell
+python flows/experiment_grid.py
+```
