@@ -45,31 +45,7 @@ Machine-Learning-NLP-Pipeline/
 │   └── CETM47_24_5-AS2-Data.json
 └── tests/
     └── test_clean.py
-=======
 
-├── src/ # Core pipeline code and models
-
-├── flows/ # Experiment orchestration scripts
-
-├── conf/ # YAML configs for pipeline/experiments
-
-├── notebooks/ # EDA and evaluation notebooks
-
-├── reports/figures/ # All output plots and figures
-
-├── data/raw/ # Raw JSON data (do not share publicly)
-
-├── data/splits/ # Pre-defined train/val/test splits
-
-
-├── tests/ # Unit tests
-
-├── docs/ # Report markdown sections
-
-├── requirements.txt # Python dependencies
-
-└── README.md
->>>>>>> cfc8bf1b3babee8a33a8b063f520116c6de9bcdb
 
 
 ```YAML
@@ -84,7 +60,7 @@ cd Machine-Learning-NLP-Pipeline
 or unpack the ZIP and open in VS Code.
 
 
-### 2. Set up your Python environment
+## 2. Set up your Python environment
 
 ```bash
 python -m venv .venv
@@ -98,7 +74,7 @@ pip install -r requirements.txt
 ```
 
 
-📊 Results and Evaluation Outputs
+## 3. Results and Evaluation Outputs
 Best Macro-F1: See reports/results_table2.csv
 
 All experiment results: In reports/cv_*.txt
@@ -108,14 +84,14 @@ Key evaluation figures: In reports/figures/ (confusion matrix, ROC curve, class 
 Test predictions: In reports/best_model_predictions.csv
 
 
-🧪 Reproducibility
+### 3. Reproducibility
 All scripts, config files, and data splits are versioned.
 
 Setting PYTHONPATH and following the run sequence below ensures all imports and scripts work on any system.
 
 
 
-📚 References
+### References
 Chapman et al. (2000). CRISP-DM 1.0
 
 Pennington et al. (2014). GloVe
