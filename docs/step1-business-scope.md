@@ -2,13 +2,10 @@
 _Author: <Your Name & Student ID>  
 CETM47 AS2_
 
----
 
 ## 1.1 Organisational Context
 
 I work as a junior data scientist at **NewsPulse Analytics**, a London-based media monitoring vendor supplying real-time trend-intelligence dashboards to national newsrooms and PR crisis-response teams. Each hour, editors sift through tens of thousands of tweets to decide which emerging stories deserve staff time; a 5-minute lag can cost front-page clicks and advertising revenue.
-
----
 
 ## 1.2 Problem Statement
 
@@ -19,7 +16,6 @@ within ≤ 0.5 s end-to-end latency.
 Manual triage currently absorbs ≈ 6 analyst-hours per day.  
 My classifier will free that time, allowing editors to focus on story-craft rather than tweet-skimming.
 
----
 
 ## 1.3 Success Criteria (KPIs)
 
@@ -30,7 +26,6 @@ My classifier will free that time, allowing editors to focus on story-craft rath
 | Analyst time saved                  | ≥ 6 h/day        | Time-and-motion repeat study, 4 weeks post-launch    |
 | Drift stability                     | PSI < 0.2 weekly | Nightly drift-monitor micro-service                  |
 
----
 
 ## 1.4 Deployment Architecture (MVP)
 
